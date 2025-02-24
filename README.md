@@ -1,4 +1,4 @@
-# Technical test for frontend developers – Event Attendance 🎟️
+# Technical test for frontend developers – Event Attendance 🎫
 
 ## Introduction 👋
 Welcome to Wuolah’s technical test for frontend developers.  
