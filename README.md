@@ -36,6 +36,8 @@ Develop a user interface for managing event attendance, implementing the followi
 4. **List attendees:**  
    *As a user, I want to see a list of users who have confirmed attendance for a specific event.* 👥
 
+Use React (preferably the LTS version) and any tools you typically use in a real-world application.
+
 ### Bonus ✨
 The interface should display a reminder notification to users who have confirmed attendance one week before the event.  
 Please provide your theoretical approach on how you would implement this processing (implementation is not required).
@@ -47,15 +49,6 @@ Please provide your theoretical approach on how you would implement this process
   Include inline comments to explain key or complex decisions.
 - **Commits:**  
   Make frequent, descriptive commits that reflect your development process.
-
-## Implementation options 🚀
-You may choose one of the following approaches:
-
-### Non Cloud-native
-- Use React (preferably the LTS version) and any tools you typically use in a real-world application.
-
-### Cloud-native (AWS)
-- Develop the interface for an application hosted on AWS S3 and served via CloudFront.
 
 ## Instructions 🔧
 1. Fork this repository.
