@@ -52,8 +52,7 @@ Please provide your theoretical approach on how you would implement this process
 
 ## Instructions 🔧
 1. Fork this repository.
-2. Create a branch with your full name.
-3. Make frequent, descriptive commits showing your development process.
-4. Once complete, create a Pull Request for review.
+2. Create a branch with your name.
+3. Once complete, create a Pull Request for review.
 
 If you have any questions, please open an issue in the repository or contact **juanlu@wuolah.com**.
