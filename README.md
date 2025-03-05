@@ -16,12 +16,13 @@ Develop a user interface for managing event attendance, implementing the followi
 
 2. **Event details:**  
    _As a user, I want to view the details of a specific event_, including title, description, date, and location. 📅
+
    _As a user, I want to view a countdown timer that updates in real-time until the event date_, so that I can easily track how much time remains before the event starts. 🕙
 
-3. **Mark/Change attendance:**  
+4. **Mark/Change attendance:**  
    _As a user, I want to confirm my attendance at an event_ and, if necessary, cancel or update my attendance. 👍/👎
 
-4. **List attendees:**  
+5. **List attendees:**  
    _As a user, I want to see a list of users who have confirmed attendance for a specific event._ 👥
 
 Use this template and any tools you typically use in a real-world application.
