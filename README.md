@@ -63,7 +63,7 @@ Two options to submit the test:
 
 ### GitHub
 
-1. Fork this repository.
+1. [Fork](https://github.com/wuolah/test-frontend-developer/fork) this repository.
 2. Create a branch with your name.
 3. Once complete, create a Pull Request for review.
 
