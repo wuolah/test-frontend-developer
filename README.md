@@ -25,12 +25,134 @@ Develop a user interface for managing event attendance, implementing the followi
 5. **List attendees:**  
    _As a user, I want to see a list of users who have confirmed attendance for a specific event._ 👥
 
-Use this template and any tools you typically use in a real-world application.
+Use this project template (React + Next.js) and any tools you typically use in a real-world application.
 
 ### Bonus ✨
 
 The interface should display a reminder notification to users who have confirmed attendance one week before the event.  
 Please provide your theoretical approach on how you would implement this processing (implementation is not required).
+
+### API
+
+You can use the following events API: `https://67c888390acf98d07086f189.mockapi.io/api/v1`
+
+<details>
+  <summary><b>List events</b></summary>
+  
+Endpoint: `GET /event`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/event",
+  {
+    method: "GET",
+    headers: { "content-type": "application/json" },
+  }
+);
+const events = await res.json();
+```
+
+</details>
+
+<details>
+  <summary><b>Retrieve a single event</b></summary>
+  
+Endpoint: `GET /event/:eventId`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/event/1",
+  {
+    method: "GET",
+    headers: { "content-type": "application/json" },
+  }
+);
+const event = await res.json();
+```
+
+</details>
+
+<details>
+  <summary><b>Create user</b></summary>
+
+Endpoint: `POST /user`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/user",
+  {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      username: "your_preferred_username",
+      avatarUrl:
+        "https://cdn.wuolahservices.com/users/default/avatar/v1/avatar-1-big.jpg",
+    }),
+  }
+);
+const user = await res.json();
+```
+
+</details>
+
+<details>
+  <summary><b>Attend an event</b></summary>
+
+Endpoint: `POST /event/:eventId/attendance`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/event/1/attendance",
+  {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      status: "CONFIRMED",
+      userId: "6",
+    }),
+  }
+);
+const attendance = await res.json();
+```
+
+</details>
+
+<details>
+  <summary><b>Update attendance status</b></summary>
+
+Endpoint: `PATCH /event/:eventId/attendance/:attendanceId`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/event/1/attendance/19",
+  {
+    method: "PATCH",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      status: "MAYBE",
+    }),
+  }
+);
+const event = await res.json();
+```
+
+</details>
+
+#### Additional doc
+
+- Filtering: https://github.com/mockapi-io/docs/wiki/Code-examples#filtering
+- Pagination: https://github.com/mockapi-io/docs/wiki/Code-examples#pagination
+- Sorting: https://github.com/mockapi-io/docs/wiki/Code-examples#sorting
 
 ## What we are evaluating 🔍
 
