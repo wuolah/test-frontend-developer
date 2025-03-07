@@ -37,6 +37,71 @@ Please provide your theoretical approach on how you would implement this process
 You can use the following events API: `https://67c888390acf98d07086f189.mockapi.io/api/v1`
 
 <details>
+  <summary><b>Create user</b></summary>
+
+Endpoint: `POST /user`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/user",
+  {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      username: "your_preferred_username",
+      avatarUrl:
+        "https://cdn.wuolahservices.com/users/default/avatar/v1/avatar-1-big.jpg",
+    }),
+  }
+);
+const user = await res.json();
+```
+
+</details>
+
+<details>
+  <summary><b>List users</b></summary>
+
+Endpoint: `GET /user`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/user",
+  {
+    method: "GET",
+    headers: { "content-type": "application/json" }
+  }
+);
+const users = await res.json();
+```
+
+</details>
+
+<details>
+  <summary><b>Retrieve a single user</b></summary>
+
+Endpoint: `GET /user/:userId`
+
+Code example:
+
+```javascript
+const res = await fetch(
+  "https://67c888390acf98d07086f189.mockapi.io/api/v1/user/1",
+  {
+    method: "GET",
+    headers: { "content-type": "application/json" }
+  }
+);
+const user = await res.json();
+```
+
+</details>
+
+<details>
   <summary><b>List events</b></summary>
   
 Endpoint: `GET /event`
@@ -72,31 +137,6 @@ const res = await fetch(
   }
 );
 const event = await res.json();
-```
-
-</details>
-
-<details>
-  <summary><b>Create user</b></summary>
-
-Endpoint: `POST /user`
-
-Code example:
-
-```javascript
-const res = await fetch(
-  "https://67c888390acf98d07086f189.mockapi.io/api/v1/user",
-  {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      username: "your_preferred_username",
-      avatarUrl:
-        "https://cdn.wuolahservices.com/users/default/avatar/v1/avatar-1-big.jpg",
-    }),
-  }
-);
-const user = await res.json();
 ```
 
 </details>
