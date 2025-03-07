@@ -29,8 +29,8 @@ Use this project template (React + Next.js) and any tools you typically use in a
 
 ### Bonus ✨
 
-The interface should display a reminder notification to users who have confirmed attendance one week before the event.  
-Please provide your theoretical approach on how you would implement this processing (implementation is not required).
+- The event details view should display a countdown timer. 
+- The interface should display a reminder notification to users who have confirmed attendance one week before the event. Please provide your theoretical approach on how you would implement this processing (implementation is not required).
 
 ### API
 
